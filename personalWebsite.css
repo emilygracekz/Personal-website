@@ -1,6 +1,6 @@
-body, 
+body,
 html {
-    margin: 0;
+  margin: 0;
 }
 
 /* h1,h2 {
@@ -11,12 +11,11 @@ html {
 
 /* background */
 .bg {
-    /* background: linear-gradient(180deg, rgba(28,31,31,1) 0%, rgba(59,56,53,1) 100%); */
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 100vh;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* img.me {
@@ -28,155 +27,189 @@ html {
 /* front page */
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    /* color: white; */
-    display: flex; 
-    flex-direction: column; 
-    justify-content: left; 
-    text-align: left;
-    text-shadow: white;
-    margin-top: auto;
-    margin: 0;
-    /* padding: 30; */
-    line-height: 1.35;
-    letter-spacing: 3px;
-    font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  color: #1e2a78;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  margin-top: auto;
+  margin: 0;
+  /* padding: 30; */
+  line-height: 1.35;
+  letter-spacing: 3px;
+  font-weight: lighter;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    color:#FF2E4C;
-    margin-bottom: auto;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: left; 
-    text-align: left;
-    text-shadow: white; 
-    margin: 0;
-    /* padding: 30; */
-    line-height: 1.35;
-    letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  color: #ff2e4c;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  margin: 0;
+  /* padding: 30; */
+  line-height: 1.35;
+  letter-spacing: 3px;
 }
 
+h3 {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    display: flex;
+    justify-content: left;
+  text-align: left;
+    width: 90%;
+    letter-spacing: 1.5px;
+  }
+  
+  /* .resume {
+    border: solid black;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    width: 150px;
+    background: transparent;
+    margin: left;
+    font: 20px;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    font-size: 20px;
+    margin-top: 10px;
+  } */
+/* .blinking {
+    animation: blinkingText 1.2s infinite;
+    display: flex; 
+    flex-direction: column; 
+    font-size: 60px;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+} */
 
 .inner {
-    background: white;
-    padding: 25px;
-    border-radius: 50%;
+  background: white;
+  padding: 25px;
+  border-radius: 50%;
 }
 
 /* second page */
 
-.about {
-    /* background: #3b3835;  */
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-h3 {
-    margin: auto;
-    font-family: 'Tajawal', sans-serif;
-    /* color: #ac9529; */
-    font-weight: bold;
-    font-size: 30px;
-    font-style: normal;
-    display: flex; 
-    width: 50%;
-    letter-spacing: 1.5px;
-
-}
+/* .about { */
+  /* background: #3b3835;  */
+  /* height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+} */
 
 /* page three */
 
 .projects {
-    /* background: linear-gradient(180deg, rgba(59,56,53,1) 0%,rgba(28,31,31,1) 100%); */
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    background: white;
+    padding: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.projects img {
+    max-height: 500px;
+    height: 70%;
+    width: auto;
+    object-fit: cover;
+    border:1px solid black;
 }
 
 p {
-    /* color: #f0d790; */
-    font-family: 'Tajawal', sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    display: flex; 
-    width: 50%;
-    margin: auto;
-    letter-spacing: 1.5px;
-    text-align: center;
+  color: black;
+  font-family: "Tajawal", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  display: flex;
+  width: 50%;
+  margin: auto;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
-.firstRow {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
-    padding-bottom: 5px;
+/* .firstRow {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .secondRow {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .projectone {
-    background-image: url("nomadDiscoverPhoto.png");
-    height: 300px;
-    width: 500px;  
+  background-image: url("nomadDiscoverPhoto.png");
+  height: 300px;
+  width: 500px;
 }
 
 .projectone:hover {
-    background-color: transparent;
-
+  background-color: transparent;
 }
 
 .projecttwo {
-    /* background: #cee4ee; */
-    height: 300px;
-    width: 500px;
+  /* background: #cee4ee; */
+  /* height: 300px;
+  width: 500px;
 }
 
 .projecttwo:hover {
-    background-color: transparent;
-
+  background-color: transparent;
 }
 
 .projectthree {
-    /* background: #cee4ee; */
-    height: 300px;
-    width: 500px;
-  
+  /* background: #cee4ee; */
+  /* height: 300px;
+  width: 500px;
 }
 
 .projectthree:hover {
-    background-color: transparent;
+  background-color: transparent;
+} */
 
-}
+/* .projectfour { */
+  /* background: #cee4ee; */
+  /* height: 300px; */
+  /* width: 500px; */
+/* } */
 
-.projectfour {
-    /* background: #cee4ee; */
-    height: 300px;
-    width: 500px;
-}
-
-.projectfour:hover {
-    background-color: transparent;
-
-}
+/* .projectfour:hover { */
+  /* background-color: transparent; */
+/* }  */
 
 /* arrow down */
-.arrow-down {
+/* .arrow-down {
     width: 100%;
     margin: 0 auto;
-    text-align: center;
-}
+    text-align: center; */
+/* }
 
 .arrow-down::after {
     content: "";
@@ -212,4 +245,4 @@ p {
     50% {
         top: 80px;
     }
-}
+} */
