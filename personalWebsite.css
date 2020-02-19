@@ -57,17 +57,18 @@ h2 {
   letter-spacing: 3px;
 }
 
-h3 {
+p {
     font-family: "Montserrat", sans-serif;
     color: black;
-    font-weight: bold;
     font-size: 30px;
     font-style: normal;
     display: flex;
     justify-content: left;
-  text-align: left;
-    width: 90%;
+    text-align: left;
+    max-width: 80%;
     letter-spacing: 1.5px;
+    padding: 0 5vw 0 0;
+    line-height: 1.55
   }
   
   /* .resume {
@@ -137,112 +138,37 @@ h3 {
     object-fit: cover;
     border:1px solid black;
 }
+.galleries {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
 
-p {
-  color: black;
-  font-family: "Tajawal", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  display: flex;
-  width: 50%;
+.gallery {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  background: white;
+  padding: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+  border:1px solid black;
+}
+
+/* footer */
+#footer {
+  bottom: 0;
   margin: auto;
-  letter-spacing: 1.5px;
-  text-align: center;
+  width: 100%;
+  position: fixed;
+  height: 55px;
+  background: transparent;
+  border-top: 1px solid white;
+  opacity: .70;
 }
-
-/* .firstRow {
-  display: flex;
-  flex-direction: row;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.secondRow {
-  display: flex;
-  flex-direction: row;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.projectone {
-  background-image: url("nomadDiscoverPhoto.png");
-  height: 300px;
-  width: 500px;
-}
-
-.projectone:hover {
-  background-color: transparent;
-}
-
-.projecttwo {
-  /* background: #cee4ee; */
-  /* height: 300px;
-  width: 500px;
-}
-
-.projecttwo:hover {
-  background-color: transparent;
-}
-
-.projectthree {
-  /* background: #cee4ee; */
-  /* height: 300px;
-  width: 500px;
-}
-
-.projectthree:hover {
-  background-color: transparent;
-} */
-
-/* .projectfour { */
-  /* background: #cee4ee; */
-  /* height: 300px; */
-  /* width: 500px; */
-/* } */
-
-/* .projectfour:hover { */
-  /* background-color: transparent; */
-/* }  */
-
-/* arrow down */
-/* .arrow-down {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center; */
-/* }
-
-.arrow-down::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    margin: auto;
-    top: 0px;
-    right: 0;
-    bottom: -560;
-    left: 0;
-    border-right: 3px solid #1E2A78;
-    border-bottom: 3px solid #1E2A78;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-animation: 3s arrow infinite ease;
-    animation: 3s arrow infinite ease;
-}
-
-@-webkit-keyframes arrow {
-    0%, 100% {
-        top: 50px;
-    }
-    50% {
-        top: 80px;
-    }
-}
-
-@keyframes arrow {
-    0%, 100% {
-        top: 50px;
-    }
-    50% {
-        top: 80px;
-    }
-} */
