@@ -4,7 +4,7 @@ html {
 }
 
 /* screens under 600 px */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 761px) {
   .bg {
     width: 100%;
     height: 90%;
@@ -16,7 +16,7 @@ html {
   }
 
   h1 {
-    width: 90%;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     color: #1e2a78;
@@ -29,7 +29,8 @@ html {
     line-height: 1.35;
     letter-spacing: 3px;
     font-weight: lighter;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-left: 10px;
   }
   h1 nde {
     width: 90%;
@@ -44,10 +45,11 @@ html {
     margin: 0;
     line-height: 1.35;
     letter-spacing: 3px;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-left: 10px;
   }
   h2 {
-    width: 90%;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     color: #ff2e4c;
@@ -57,9 +59,10 @@ html {
     justify-content: left;
     text-align: left;
     margin: 0;
+    margin-left: 10px;
   }
   p {
-    width: 90%;
+    width: 100%;
     height: 80%;
     font-family: "Montserrat", sans-serif;
     color: #141823;
@@ -71,6 +74,7 @@ html {
     letter-spacing: 1.5px;
     padding: 0 5vw 0 0;
     line-height: 1.55;
+    margin-left: 10px;
   }
   a {
     font-family: "Montserrat", sans-serif;
@@ -85,36 +89,26 @@ html {
     padding: 0 5vw 0 0;
     line-height: 1.55;
   }
-  .projects {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-gap: 20px;
-    align-items: stretch;
-    background: white;
-    padding: 2rem;
-    padding: 2rem;
-    display: grid;
-    grid-gap: 2rem;
+
+  .galleries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .projects img {
-    max-height: 500px;
-    height: 70%;
-    width: auto;
-    object-fit: cover;
-    border: 1px solid black;
+  .galleries img {
+    width: 90%;
+    padding: 2rem;
   }
-  .galleries {
-    display: grid;
-    grid-template-columns: 100px 100px;
-    width: 100%;
-    height: 100%;
+
+  .p1 {
+margin: auto;
   }
+
 }
 
 /* Screens bigger than 801px */
- @media screen and (min-width: 801px) {
+@media screen and (min-width: 762px) {
   .bg {
     width: 100%;
     height: 100%;
@@ -131,12 +125,14 @@ html {
     margin-top: auto;
     margin: 0;
     /* padding: 30; */
-     line-height: 1.35;
+    line-height: 1.35;
     letter-spacing: 3px;
     font-weight: lighter;
+    margin-top: 50px;
+    margin-left: 10px;
   }
 
-   h2 {
+  h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
     color: #ff2e4c;
@@ -145,10 +141,11 @@ html {
     flex-direction: column;
     justify-content: left;
     text-align: left;
-    margin: 0; 
+    margin: 0;
     /* padding: 30; */
     line-height: 1.35;
     letter-spacing: 3px;
+    margin-left: 10px;
   }
 
   p {
@@ -162,6 +159,7 @@ html {
     letter-spacing: 1.5px;
     padding: 0 5vw 0 0;
     line-height: 1.55;
+    margin-left: 10px;
   }
 
   a {
@@ -178,24 +176,47 @@ html {
     line-height: 1.55;
   }
   /* projects css */
-  .galleries {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 100px 100px;
-    width: 100%;
-    height: 100%;
-  }
+.left {
+  width: 50%;
+  text-align: center;
+  float: left;
+}
 
-  .galleries img {
+.right {
+  width: 50%;
+  text-align: center;
+
+  float: right;
+}
+
+.right p, .left p {
+  text-align: center;
+}
+
+.left img {
+  width: 70%;
+}
+
+.right img {
+  width: 70%;
+}
+
+  /* .display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
+
+  /* .galleries img {
     width: 100%;
     height: 100%;
     object-fit: 50%;
     border: 1px solid black;
-  }
-} 
+  } */
+}
 
 /* screens bigger than 1000 px */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1280px) {
   .bg {
     height: 100vh;
     text-align: left;
@@ -218,6 +239,8 @@ html {
     line-height: 1.35;
     letter-spacing: 3px;
     font-weight: lighter;
+    margin-top: 50px;
+    margin-left: 10px;
   }
 
   h2 {
@@ -233,6 +256,7 @@ html {
     /* padding: 30; */
     line-height: 1.35;
     letter-spacing: 3px;
+    margin-left: 10px;
   }
 
   p {
@@ -246,6 +270,7 @@ html {
     letter-spacing: 1.5px;
     padding: 0 5vw 0 0;
     line-height: 1.55;
+    margin-left: 10px;
   }
 
   a {
@@ -254,31 +279,29 @@ html {
     font-size: 40px;
     font-style: normal;
     /* display: flex; */
-    justify-content: left;
+    /* justify-content: left; */
     text-align: left;
     max-width: 80%;
     letter-spacing: 1.5px;
-    padding: 0 5vw 0 0;
+    /* padding: 0 5vw 0 0; */
     line-height: 1.55;
   }
-/* projects page */
+  /* projects page */
 
- .galleries h2{
-color: purple;
-}
-
-  .galleries {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 100px 100px;
-    width: 100%;
-    height: 100%;
+  .galleries h2 {
+    color: purple;
   }
 
-  .galleries img {
+  .display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* .galleries img {
     width: 100%;
     height: 100%;
     object-fit: 50%;
     border: 1px solid black;
-  }
+  } */
 }
