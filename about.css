@@ -42,12 +42,21 @@ h2 {
   font-family: "Montserrat", sans-serif;
   color: #1e2a78;
   font-weight: bold;
+  letter-spacing: 3px;
+
 }
 
 h3 {
   color: #1e2a78;
   font-family: "Montserrat", sans-serif;
-  text-decoration: underline;
+  letter-spacing: 3px;
+
+  /* text-decoration: underline; */
+}
+
+h4 {
+    color: #1e2a78;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -68,35 +77,39 @@ a:hover {
 /* MOBILE!!! */
 /* screens under 761 px */
 @media screen and (max-width: 761px) {
-    .container {
-        padding: 10px;
-        width: 140%;
-    }
+  .container {
+    padding: 10px;
+    width: 140%;
+  }
+
   .top {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-top: 100px; */
     padding-bottom: 100px;
-
   }
 
   h1 {
-    font-size: 40px;
+      padding-top: 20px;
+    font-size: 45px;
     text-align: left;
-    margin-top: 100px;
+    margin-top: 200px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 45px;
+  }
+
+  h4 {
+      font-size: 35px;
   }
 
   p {
-    font-size: 30px;
+    font-size: 26px;
     text-align: left;
     letter-spacing: 1.5px;
   }
@@ -104,54 +117,58 @@ a:hover {
   .stats {
     display: flex;
     flex-direction: row;
+    text-align: center;
     justify-content: space-around;
   }
 
   .stack .code .live {
-    display: flex;
+    /* display: flex; */
     text-align: center;
   }
 
   .stats a {
-      font-size: 30px;
-      text-align: center;
+    font-size: 25px;
+    text-align: center;
   }
 
   .stats p {
-    font-size: 17px;
+    font-size: 25px;
   }
 
   /* middle */
 
   .middle {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     padding-top: 100px;
     padding-bottom: 100px;
-
   }
 
   .codepic img {
-    width: 50%;
-    height: auto; 
-    display: hidden; 
+    display: none;
   }
 
   .mobilepic img {
     width: 50%;
     height: auto;
+    padding-left: 30%;
   }
 
   /* end */
 
   .end {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
 
+  .end h2 {
+    text-align: center;
+  }
+
+  .end p {
+    text-align: center;
   }
 }
 
