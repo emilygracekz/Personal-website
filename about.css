@@ -79,6 +79,13 @@ a:hover {
   text-align: center;
 }
 
+.home-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 90%;
+  opacity: 20%;
+}
+
 /* MOBILE!!! */
 /* screens under 761 px */
 @media screen and (max-width: 761px) {
