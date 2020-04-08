@@ -1,7 +1,0 @@
-{
-    "cities": [
-        {"id": 1,
-        "name": "Berlin",
-        "country": "Germany", "budget": 2000 }
-    ]
-}
