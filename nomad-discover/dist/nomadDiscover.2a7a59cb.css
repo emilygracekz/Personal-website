@@ -1,0 +1,188 @@
+body,
+html {
+  margin: 0;
+}
+
+/* background */
+.bg {
+  /* background-image: url("ndbackground.jpg"); */
+  background-color: #EDE7D7;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav {
+  float: left;
+  list-style: none;
+  margin-top: 30px;
+}
+/* #FFA939 */
+.main-nav li a {
+  color: #172957;
+  text-decoration: none;
+  padding: 5px 20px;
+  font: 20px 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* form */
+.start {
+  top: 10%;
+  right: 25%;
+  left: 25%;
+  text-align: center;
+}
+
+.btn {
+  font: 30px 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 10px 50px;
+  color: #172957;
+  background-color: transparent;
+  text-decoration: none;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: inset 0 0 2px 1px #172957;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.drop-down { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font: 'Montserrat', sans-serif;
+  text-align: center;
+ }
+
+.drop-down select {
+  background: transparent;
+  padding: 10px;
+  font-size: 20px;
+  /* box-shadow: inset 0 0 2px 1px #FF5926;
+  -webkit-appearance: button; */
+  outline: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: thin;
+  color: #172957;
+  width: 450px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  
+}
+
+.drop-down:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+
+/* modal */
+.modal-outer {
+  display: grid;
+  background: transparent;
+  height: 0%;
+  width: 0%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+/* hide modal until needed */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.modal-outer img {
+  width: 100%;
+}
+
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-inner {
+  width: 800px;
+  height: 500px;
+  padding: 2rem;
+  border-radius: 5px;
+  min-height: 200px;
+  background: #EDE7D7;
+  transition: transform 2s;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal-outer.open .modal-inner {
+  transform: translateY(0);
+}
+
+
+/* page 2 */
+
+p {
+  font: 40px 'Montserrat', sans-serif;
+  color: #172957;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  margin: inherit;
+}
+
+h4 {
+  font: 15px 'Montserrat', sans-serif;
+  color: #172957;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  margin: inherit;
+}
+/* footer */
+#footer {
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  height: 55px;
+  background: transparent;
+  border-top: 1px solid grey;
+  opacity: .70;
+}
+
+/*# sourceMappingURL=/nomadDiscover.2a7a59cb.css.map */
