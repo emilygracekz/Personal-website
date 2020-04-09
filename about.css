@@ -58,7 +58,6 @@ p {
   font-family: "Montserrat", sans-serif;
   color: #2a2a2a;
   line-height: 1.55;
-  letter-spacing: .7px;
 }
 
 a {
@@ -76,7 +75,6 @@ a:hover {
 
 .footer h3 {
   font-weight: normal;
-  letter-spacing: 1.5px;
   text-align: center;
 }
 
@@ -117,7 +115,6 @@ a:hover {
 
   p {
     text-align: left;
-    letter-spacing: 1.5px;
     font-size: 15px;
   }
 
