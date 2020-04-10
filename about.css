@@ -54,15 +54,22 @@ h4 {
   font-size: 25px;
 }
 
+h5 {
+  color: #ff2e4c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
   color: #2a2a2a;
-  line-height: 1.55;
+  line-height: 2;
 }
 
 a {
   color: #ff2e4c;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 a:hover {
@@ -116,6 +123,7 @@ a:hover {
   p {
     text-align: left;
     font-size: 15px;
+    line-height: 2;
   }
 
   .stats {
