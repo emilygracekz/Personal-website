@@ -1,1 +1,0 @@
-{"version":3,"sources":["test.js"],"names":["database","name"],"mappings":";;;;;;AAAA,IAAMA,QAAQ,GAAG,CAAC;AAACC,EAAAA,IAAI,EAAE;AAAP,CAAD,CAAjB;eAEeD","file":"test.e98b79dd.js","sourceRoot":"..","sourcesContent":["const database = [{name: \"cool 2\"}]\n\nexport default database"]}
