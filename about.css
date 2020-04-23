@@ -2,6 +2,7 @@
 body,
 html {
   margin: 0;
+  background: #26303d;
 }
 
 .container {
@@ -30,14 +31,14 @@ html {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  color: #1e2a78;
+  color: #e635d4;
   font-weight: bold;
   letter-spacing: 3px;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  color: #1e2a78;
+  color: #3be8b0;
   font-weight: bold;
   letter-spacing: 3px;
 }
@@ -62,12 +63,12 @@ h5 {
 
 p {
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #1da1f2;
   line-height: 2;
 }
 
 a {
-  color: #ff2e4c;
+  color: #f7dc68;
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }

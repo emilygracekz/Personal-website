@@ -1,10 +1,11 @@
 body,
 html {
   margin: 0;
+  background: #26303d;
 }
 
 .container{
-  padding: 15px;
+  padding: 25px;
   }
 
 .bg {
@@ -16,29 +17,29 @@ html {
 }
 
 .bg a {
-  color: #ff2e4c;
+  color: #f7dc68;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  color: #1e2a78;
+  color: #e635d4;
   font-weight: lighter;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  color: #ff2e4c;
+  color: #3be8b0;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #1da1f2;
   line-height: 1.55;
 }
 
 a {
   font-family: "Montserrat", sans-serif;
-  color: #1e2a78;
+  /* color: #f7dc68; */
   text-decoration: none;
 }
 
@@ -49,6 +50,10 @@ a:hover {
 
 .projects-header {
   margin-left: 15px;
+}
+
+.projects p {
+  color: #f7dc68;
 }
 
 .projects a:hover {
@@ -68,9 +73,13 @@ img:hover {
   justify-content: center;
 }
 
+.footer p {
+  color: #ff2e4c;
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #1da1f2;
   font-weight: lighter;
   padding: 20px;
 }
@@ -84,8 +93,8 @@ h3 {
 
   h1 {
     width: 100%;
-    font-size: 40px;
-    text-align: left;
+    font-size: 30px;
+    /* text-align: left; */
     margin: 0;
     line-height: 1.35;
     letter-spacing: 3px;
@@ -93,7 +102,7 @@ h3 {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 30px;
     width: 100%;
     margin-bottom: auto;
     text-align: left;
@@ -102,11 +111,11 @@ h3 {
 
   p {
     font-size: 17px;
-    text-align: left;
+    /* text-align: left; */
   }
 
   a {
-    text-align: left;
+    /* text-align: left; */
     /* max-width: 80%; */
     line-height: 1.55;
     font-size: 17px;
@@ -117,7 +126,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   .projects p {
